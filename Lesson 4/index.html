@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <style type="text/css">
+		body {
+			max-width: 800px;
+			margin: 0 auto;
+		}	
+	</style>
+</head>
+<body>
+    <h1>Lesson 4</h1>
+    <h2>Верхний и нижний индексы</h2>
+    <h3>sup – верхний индекс</h3>
+    <p>Как ожидается, к 2050 году численность населения Земли увеличится на 2 миллиарда человек  — с 7,7 до 9,7 миллиарда <sup>[1]</sup></p>
+    <p>Два в кубе равно восьми: 2<sup>3</sup> = 8</p>
+    <p>В ночь на 1<sup>е</sup> января наступает Новый год.</p>
+    <h3>sub – нижний индекс</h3>
+    <p>H<sub>2</sub>O – химическая формула воды</p>
+    <h2>Справочная информация</h2>
+    <h3>abbr - тег аббревиатуры</h3>
+    <p>Штаб-квартира <abbr title="Организация Объединённых Наций">ООН</abbr> находится в Нью-Йорке.</p>
+    <h3>dfn – тег определения</h3>
+    <p><dfn>HTML</dfn> - язык гипертекстовой разметки для создания веб-страниц.</p>
+    <p><dfn title="HyperText Markup Language">HTML</dfn> - язык гипертекстовой разметки для создания веб-страниц.</p>
+    <p><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> язык гипертекстовой разметки для создания веб-страниц.</p>
+    <h3>time – тег времени и даты</h3>
+    <p>Наш магазин работает ежедневно, с <time>09:00</time> до <time>17:00</time>.</p>
+    <p>Успейте купить товары со скидкой до <time datetime="2022-01-01 00:00">Нового года</time>.</p>
+    <h3>data – машиночитаемая метка контента</h3>
+    <p>Товар: <data value="21053">Cherry Tomato</data></p>
+    <h3>address - тег контактной информации</h3>
+    <address>
+        Автор: <a href="mailto: i_bezdomny@mail.com">Иван Бездомный </a>.<br>
+        Адрес для писем:<br>
+        г. Киев-01, а/я 327<br>
+        Украина
+    </address>
+    <h2>Специальные блочные элементы-обертки</h2>
+    <h3>pre – предварительно форматированный текст</h3>
+    <p>
+        Кабы не было зимы <br>
+        В городах и сёлах, <br>
+        Никогда б не знали мы <br> 
+        Этих дней весёлых.
+    </p>
+    <pre>
+        Не кружила б малышня
+        Возле снежной бабы, 
+        Не петляла бы лыжня, 
+        Кабы, кабы, кабы...
+    </pre>
+    <h3>figure – тег группировки элемента с его описанием</h3>
+    <figure role="img" aria-labelledby="cow-caption">
+        <pre>
+            ___________________________
+        &lt; I'm an expert in my field. &gt;
+            ---------------------------
+                \   ^__^
+                 \  (oo)\_______
+                    (__)\       )\/\
+                        ||----w |
+                        ||     ||
+        </pre>
+        <figcaption id="cow-caption">
+          A cow saying, "I'm an expert in my field." The cow is illustrated using preformatted text characters.
+        </figcaption>
+      </figure>    
+    <h3>template – тег шаблона</h3>  
+    <template>
+        <h4>Title </h4>
+        <p>Description</p>
+    </template>
+</body>
+</html>
