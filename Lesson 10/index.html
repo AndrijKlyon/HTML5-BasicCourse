@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10</title>
+    <style type="text/css">
+		body {
+			max-width: 800px;
+			margin: 0 auto;
+		}	
+	</style>
+</head>
+<body>
+    <h1>Lesson 10</h1>
+    <h2>audio – тег добавления аудио-файла</h2>
+    <audio controls muted>
+        <source src="media/audio-test.ogg" type="audio/ogg">
+        <source src="media/audio-test.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает тег audio.
+    </audio>  
+    <h2>video – тег добавления видео-файла</h2>
+    <video width="320" controls>
+        <source src="media/video-test.mp4" type="video/mp4">
+        <source src="media/video-test.ogg" type="video/ogg">
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+        Ваш браузер не поддерживает тег video.
+    </video> 
+    <h2>iframe – тег встраивания другой веб-страницы</h2>
+    <div>
+        <object data="media/image-test.jpg" type="image/jpg" width="300" height="200"></object>
+    </div>
+    <div>
+        <object data="frame.html" type="text/html" width="500" height="200"></object>
+    </div>
+    <div>
+        <object data="media/video-test.mp4" type="video/mp4" width="400" height="300"></object>
+    </div>
+    <div>
+        <object type="application/pdf" data="media/pdf-test.pdf" width="800" height="400"></object>
+    </div>
+</body>
+</html>
