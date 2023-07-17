@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <style type="text/css">
+		body {
+			max-width: 800px;
+			margin: 0 auto;
+		}	
+        @media (max-width: 640px) {
+            img {
+                width: 427px;
+                height: 240px;
+            }
+        }
+        @media (max-width: 450px) {
+            img {
+                width: 320px;
+                height: 180px;
+            }
+        }
+	</style>
+</head>
+<body>
+    <h1>Lesson 8</h1>
+    <h2>img – тег простой вставки изображения</h2>
+    <img src="images/nat1.jpg" width="640" height="360" alt="lightning in the mountains">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, cupiditate tempore earum facilis inventore nihil tempora omnis impedit necessitatibus hic praesentium quas explicabo corporis aut, reprehenderit doloremque labore nemo voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla illum delectus modi laboriosam sunt corporis, voluptas consectetur mollitia accusamus aspernatur odio in tempore optio reprehenderit sequi cum qui rem.</p>
+   <h2>figure – тег вставки изображения с подписью</h2> 
+    <figure>
+        <img src="images/nat2.jpg" alt="autumn" width="640" height="320">
+        <figcaption>Image 1. Autumn</figcaption>
+    </figure>  
+    <h2>picture – набор изображений для различных условий</h2>         
+    <picture>
+        <source media="(max-width: 450px)" srcset="images/nat3.jpg">       
+        <source media="(max-width: 700px)" srcset="images/nat2.jpg">
+        <img src="images/nat1.jpg" alt="Nature" width="640" height="320">
+    </picture>
+    <picture>
+        <source type="image/webp" srcset="images/nat3.webp">
+        <img src="images/nat3.jpg" alt="Nature" width="640" height="320">
+    </picture>
+</body>
+</html>
