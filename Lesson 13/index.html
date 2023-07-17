@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13</title>
+    <style type="text/css">
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }	
+    </style>
+</head>
+<body>
+    <h1>Lesson 13</h1>
+    <h2>Form 1</h2>
+    <form action="#">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Form 2</h2>    
+    <form action="#" method="POST">
+        <label for="colors">Car color:</label>
+        <select id="colors" name="colors">
+            <option disabled selected value=""> Please, select car color … </option>
+            <option value="red">red</option>
+            <option value="black">black</option>
+            <option value="blue">blue</option>
+            <option value="white">white</option>
+            <option value="green">green</option>
+        </select> 
+        <br><br>
+        <input type="submit">
+    </form>
+    <h2>Form 3</h2>
+    <form action="#" method="POST">
+        <label for="worldcars">Choose a car:</label>
+        <select name="worldcars" id="worldcars">
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>  
+    <h2>Form 4</h2>    
+    <form action="#" method="get">
+        <label for="mycar">Choose your car name:</label>
+        <input list="carnames" name="mycar" id="mycar">
+        <datalist id="carnames">
+          <option value="Volvo">
+          <option value="Saab">
+          <option value="Mercedes">
+          <option value="Audi">
+        </datalist>
+        <input type="submit">
+    </form>
+    <h2>Form 5</h2>
+    <form action="#">
+        <label for="name">Your name:</label>
+        <input type="text" id="name"> <br><br>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        <br><br>
+        <button type="submit" value="subm">Submit</button>
+    </form>  
+    <p>
+        <img src="image-1.jpg" width="300" alt="Nature"><img src="image-2.jpg" width="300" alt="Nature">
+    </p>  
+    <h2>Form 6</h2>   
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type=" number" id="a" value="0">
+        +<input type="number" id="b" value="0">
+        =<output name="x" for="a b"></output>
+        <br><br>
+    </form>        
+</body>
+</html>
