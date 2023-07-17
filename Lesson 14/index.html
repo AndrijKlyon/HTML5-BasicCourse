@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 14</title>
+    <style type="text/css">
+		body {
+			max-width: 800px;
+			margin: 0 auto;
+		}	
+	</style>
+</head>
+<body>
+    <!-- Заголовок (верхний колонтитул) -->
+    <header>
+        <!-- Логотип -->
+        <div>
+            <h1>Our company</h1>
+            <img src="logo.png" width="60" height="60" alt="Logo">
+        </div>
+        <!-- Меню навигации -->
+        <nav>
+            <a href="index.html">Main</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- Главный контент страницы -->
+    <main>
+        <!-- Баннер -->
+        <section>
+            <img src="banner.png" width="600" alt="Our company – the best services">   
+             <!-- Текстовый блок баннера -->
+             <div>
+                 <h2>Our company – the best services</h2>
+                 <p>This is description of our company</p>
+                 <a href="about.html">Learn more</a> 
+             </div>
+        </section>
+        <!-- О компании -->
+        <section>
+            <!-- Заголовок блока с описанием -->
+            <div>
+                <h2>About us</h2>
+                <p>lorem…</p>   
+            </div>
+            <!-- Список преимуществ -->
+            <div>
+                <article>
+                    <h3>Professional</h3>
+                    <p>lorem…</p>
+                </article>
+                <article>
+                    <h3>Trust </h3>
+                    <p>lorem…</p>
+                </article>
+                <article>
+                    <h3>Warranty</h3>
+                    <p>lorem…</p>
+                </article>     
+            </div>
+        </section>
+    </main>
+    <!-- Подвал (нижний колонтитул) -->
+    <footer>
+        <p>Our company, 2022</p> 
+        <button id="subscribeButton">Subscribe</button> 
+        <details>
+            <summary>Rights</summary>
+            <p>All rights reserved</p>
+        </details>       
+    </footer>
+    <dialog id="subscribeForm">
+        <form action="#" method="dialog">
+            <label>Enter your email<input type="email"></label>
+            <button id="cancelButton" type="reset">Cancel</button>
+            <button type="submit">Subscribe</button>
+        </form>
+    </dialog>
+    <script>
+        (function() {
+          var subscribeButton = document.getElementById('subscribeButton');
+          var cancelButton = document.getElementById('cancelButton');
+          var dialog = document.getElementById('subscribeForm');
+      
+          // Open a modal dialog
+          subscribeButton.addEventListener('click', function() {
+            dialog.showModal();
+          });
+      
+          // Close the dialog box
+          cancelButton.addEventListener('click', function() {
+            dialog.close();
+          });
+      
+        })();
+    </script>
+</body>
+</html>
